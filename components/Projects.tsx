@@ -1,35 +1,48 @@
-const projects = [
-  {
-    title: "Project One",
-    description: "A short description of what it does and the problem it solves.",
-    tech: "React, Tailwind",
-    link: "https://github.com/yourname/project-one",
-  },
-  {
-    title: "Project Two",
-    description: "Another short description.",
-    tech: "Next.js, TypeScript",
-    link: "https://github.com/yourname/project-two",
-  },
-];
+import { projects } from "@/lib/content";
+
+const linkClass =
+  "text-sm font-medium text-accent underline-offset-4 hover:underline";
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 py-20">
-      <h2 className="mb-8 text-3xl font-bold">Projects</h2>
-      <div className="grid gap-6 md:grid-cols-2">
+    <section id="projects" className="border-t border-line py-20 sm:py-24">
+      <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
+
+      <ul className="mt-10">
         {projects.map((p) => (
-          <a
+          <li
             key={p.title}
-            href={p.link}
-            className="rounded-xl border p-6 transition hover:shadow-lg"
+            className="border-t border-line py-8 first:border-t-0 first:pt-0"
           >
-            <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="mt-2 text-gray-600">{p.description}</p>
-            <p className="mt-4 text-sm text-gray-500">{p.tech}</p>
-          </a>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+              <h3 className="text-xl font-semibold tracking-tight">{p.title}</h3>
+              <div className="flex gap-5">
+                {p.live && (
+                  <a href={p.live} target="_blank" rel="noreferrer" className={linkClass}>
+                    Live site
+                  </a>
+                )}
+                {p.code && (
+                  <a href={p.code} target="_blank" rel="noreferrer" className={linkClass}>
+                    Source code
+                  </a>
+                )}
+              </div>
+            </div>
+            <p className="mt-3 max-w-xl leading-relaxed text-muted">{p.description}</p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {p.tags.map((t) => (
+                <li
+                  key={t}
+                  className="rounded-full border border-line px-3 py-1 text-xs text-muted"
+                >
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
