@@ -12,7 +12,7 @@ export const site = {
 export const hero = {
   headline: "I build clean, fast websites that people enjoy using.",
   intro:
-    "I'm a web developer based in Selangor, Malaysia. I like turning ideas into simple, well-made products, and I'm currently open to new opportunities.",
+    "My name is Muhammad Zuhairy",
 };
 
 export const about = {
