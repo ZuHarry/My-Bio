@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="border-t border-line py-20 sm:py-24">
       <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
       <p className="mt-6 max-w-xl leading-relaxed text-muted">
-        I&apos;m open to freelance work and full-time roles. The fastest way to reach me is email.
+        I&apos;m looking for a Graduate Software Engineer role in web and mobile development. The fastest way to reach me is email.
       </p>
       <a
         href={`mailto:${site.email}`}

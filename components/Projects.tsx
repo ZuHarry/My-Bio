@@ -29,6 +29,7 @@ export default function Projects() {
                 )}
               </div>
             </div>
+            {p.note && <p className="mt-1 text-sm text-muted">{p.note}</p>}
             <p className="mt-3 max-w-xl leading-relaxed text-muted">{p.description}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {p.tags.map((t) => (
