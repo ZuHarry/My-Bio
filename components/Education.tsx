@@ -1,34 +1,41 @@
 import { achievements, education } from "@/lib/content";
+import Hl from "./Hl";
+import Note, { Check } from "./Note";
 
 export default function Education() {
   return (
-    <section id="education" className="border-t border-line py-20 sm:py-24">
-      <h2 className="text-2xl font-semibold tracking-tight">Education</h2>
+    <section
+      id="education"
+      className="bg-gradient-to-b from-[#e8f1fc] via-[#f4dbe9] to-[#f8e3ee] px-6 py-24"
+    >
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-4xl font-light tracking-tight sm:text-5xl">
+          find the <Hl>foundation</Hl>
+        </h2>
+        <p className="mt-4 max-w-md leading-relaxed">
+          it&apos;s not about trends. it&apos;s about learning the craft properly.
+        </p>
 
-      <ul className="mt-10">
-        {education.map((e) => (
-          <li
-            key={e.title}
-            className="border-t border-line py-8 first:border-t-0 first:pt-0"
-          >
-            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-              <h3 className="max-w-md text-lg font-semibold tracking-tight">{e.title}</h3>
-              <span className="text-sm text-muted">{e.period}</span>
-            </div>
-            <p className="mt-1 text-sm text-muted">
-              {e.school} · {e.detail}
-            </p>
-            <p className="mt-4 max-w-xl leading-relaxed text-muted">{e.courses}</p>
-          </li>
-        ))}
-      </ul>
+        <div className="mt-12 grid items-start gap-6 md:grid-cols-2">
+          {education.map((e) => (
+            <Note key={e.title} title={e.detail + " CGPA"}>
+              <p className="font-semibold leading-snug">{e.title}</p>
+              <p className="mt-1 text-sm text-ink/60">
+                {e.school} · {e.period}
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-ink/75">{e.courses}</p>
+            </Note>
+          ))}
 
-      <h3 className="mt-6 text-lg font-semibold tracking-tight">Achievements</h3>
-      <ul className="mt-4 max-w-xl list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-line">
-        {achievements.map((a) => (
-          <li key={a}>{a}</li>
-        ))}
-      </ul>
+          <Note title="achievements unlocked" className="md:col-span-2">
+            <ul className="grid gap-2 text-sm md:grid-cols-2 md:gap-x-8">
+              {achievements.map((a) => (
+                <Check key={a}>{a}</Check>
+              ))}
+            </ul>
+          </Note>
+        </div>
+      </div>
     </section>
   );
 }

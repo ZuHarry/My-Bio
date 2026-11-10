@@ -14,6 +14,7 @@ export const site = {
 };
 
 export const hero = {
+  tagline: "web & mobile apps, from first idea to shipped",
   headline: "I build web and mobile apps that solve real problems.",
   intro:
     "I'm a Computer Science (Software Development) graduate from Universiti Teknikal Malaysia Melaka. I've built PHP web applications during my internship and Flutter mobile apps for my projects, and I'm looking for a Graduate Software Engineer role.",
@@ -72,6 +73,7 @@ export const experience = [
 
 export const projects = [
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "eInventory",
     note: "Final year project, UTeM",
     description:
@@ -81,6 +83,7 @@ export const projects = [
     code: "https://github.com/ZuHarry", // replace with the repo link
   },
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "eBike SMS (Student Mobility Solution)",
     note: "1st place, Workshop 2 Software Development Project, UTeM",
     description:
@@ -90,6 +93,7 @@ export const projects = [
     code: "https://github.com/ZuHarry", // replace with the repo link
   },
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "eSihat",
     note: "3rd place, Diploma Final Year Project Exhibition (Programming), PUO",
     description:
@@ -99,6 +103,7 @@ export const projects = [
     code: "",
   },
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "Groceries Sale Tracker",
     note: "Workshop 1, UTeM",
     description: "A C++ program for tracking grocery sales.",
@@ -107,6 +112,7 @@ export const projects = [
     code: "",
   },
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "Video Interview Website",
     note: "Languages Department, PUO",
     description: "A video interview website built with Google Sites for the Languages Department.",
@@ -118,6 +124,7 @@ export const projects = [
 
 export const education = [
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "Bachelor of Computer Science (Software Development) with Honours",
     school: "Universiti Teknikal Malaysia Melaka (UTeM)",
     period: "2023 – 2026",
@@ -126,6 +133,7 @@ export const education = [
       "Software Engineering, Data Structures & Algorithms, Database Systems, Mobile Application Development, Human Computer Interaction, Web Programming, Software Verification & Validation",
   },
   {
+    image: "", // optional screenshot, e.g. "/projects/einventory.png"
     title: "Diploma in Digital Technology",
     school: "Politeknik Ungku Omar (PUO)",
     period: "2020 – 2023",

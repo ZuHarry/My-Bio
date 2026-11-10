@@ -2,41 +2,50 @@ import { site, socials } from "@/lib/content";
 
 export default function Contact() {
   return (
-    <section id="contact" className="border-t border-line py-20 sm:py-24">
-      <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-      <p className="mt-6 max-w-xl leading-relaxed text-muted">
-        I&apos;m looking for a Graduate Software Engineer role in web and mobile development. The fastest way to reach me is email.
-      </p>
-      <a
-        href={`mailto:${site.email}`}
-        className="mt-6 inline-block text-2xl font-semibold tracking-tight text-accent underline-offset-4 hover:underline sm:text-3xl"
-      >
-        {site.email}
-      </a>
-      <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-        {socials.map((s) => (
-          <li key={s.label}>
+    <section id="contact" className="bg-lime px-6 pb-16 pt-28">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="max-w-4xl text-[clamp(2.75rem,8vw,6.5rem)] font-light leading-[1.02] tracking-tight">
+          thanks for scrolling, now let&apos;s{" "}
+          <span className="font-serif italic">build something</span> together xx
+        </h2>
+
+        <p className="mt-8 max-w-md leading-relaxed">
+          i&apos;m looking for a graduate software engineer role in web and mobile development.
+          the fastest way to reach me is email.
+        </p>
+
+        <a
+          href={`mailto:${site.email}`}
+          className="mt-8 inline-block rounded-full bg-ink px-8 py-4 text-lg font-medium text-white transition-opacity hover:opacity-80"
+        >
+          {site.email}
+        </a>
+
+        <ul className="mt-8 flex flex-wrap gap-3 text-sm">
+          {socials.map((s) => (
+            <li key={s.label}>
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded-full border border-ink px-4 py-1.5 transition-colors hover:bg-hl"
+              >
+                {s.label}
+              </a>
+            </li>
+          ))}
+          <li>
             <a
-              href={s.href}
+              href={site.resume}
               target="_blank"
               rel="noreferrer"
-              className="text-muted transition-colors hover:text-fg"
+              className="block rounded-full border border-ink px-4 py-1.5 transition-colors hover:bg-hl"
             >
-              {s.label}
+              download resume
             </a>
           </li>
-        ))}
-        <li>
-          <a
-            href={site.resume}
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted transition-colors hover:text-fg"
-          >
-            Download resume
-          </a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </section>
   );
 }
