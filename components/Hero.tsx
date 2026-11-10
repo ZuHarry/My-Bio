@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="relative hidden h-80 md:block">
           <Window title="me.png" className="absolute left-0 top-0 w-48 -rotate-2">
             <div className="aspect-[4/5]">
-              <Thumb src={site.photo} alt={site.name} variant="hill" />
+              <Thumb src="{site.photo}" alt={site.name} variant="hill" />
             </div>
           </Window>
           <Window title="flutter.jpg" className="absolute bottom-0 right-4 w-28 rotate-3">

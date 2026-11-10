@@ -3,14 +3,14 @@
 export const site = {
   name: "Muhammad Zuhairy Razaly",
   shortName: "Zuhairy",
-  role: "Software Developer",
+  role: "Software Engineer",
   title: "Muhammad Zuhairy Razaly | Software Developer",
   description:
     "Portfolio of Muhammad Zuhairy Razaly, a Computer Science (Software Development) graduate building web and mobile applications.",
   location: "Sitiawan, Perak, Malaysia",
   email: "zuhairy812@gmail.com",
   resume: "/resume.pdf", // put your CV in the /public folder as resume.pdf
-  photo: "", // e.g. "/photo.jpg" after adding the image to /public
+  photo: "/photo.jpg", // e.g. "/photo.jpg" after adding the image to /public
 };
 
 export const hero = {
