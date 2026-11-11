@@ -26,7 +26,7 @@ export default function Hero() {
           <h1 className="text-[clamp(3.5rem,10vw,7.5rem)] font-light leading-[0.9] tracking-tight">
             software
             <br />
-            <Hl>developer</Hl>
+            <Hl>engineer</Hl>
           </h1>
           <p className="mx-auto mt-8 max-w-sm text-lg leading-snug">{hero.tagline}</p>
           <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-ink/70">{hero.intro}</p>

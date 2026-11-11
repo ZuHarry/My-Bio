@@ -1,12 +1,12 @@
 // ✏️ EDIT THIS FILE: all the text on your site lives here.
 
 export const site = {
-  name: "Muhammad Zuhairy Razaly",
+  name: "Muhammad Zuhairy bin Razaly",
   shortName: "Zuhairy",
   role: "Software Engineer",
-  title: "Muhammad Zuhairy Razaly | Software Developer",
+  title: "Muhammad Zuhairy Razaly | Software Engineer",
   description:
-    "Portfolio of Muhammad Zuhairy Razaly, a Computer Science (Software Development) graduate building web and mobile applications.",
+    "Portfolio of Muhammad Zuhairy bin Razaly, a software engineer student",
   location: "Sitiawan, Perak, Malaysia",
   email: "zuhairy812@gmail.com",
   resume: "/resume.pdf", // put your CV in the /public folder as resume.pdf
@@ -22,7 +22,7 @@ export const hero = {
 
 export const about = {
   paragraphs: [
-    "I studied Digital Technology at Politeknik Ungku Omar, then went on to a Bachelor of Computer Science (Software Development) at UTeM. Along the way I interned twice at YTY Group, first in IT support and later as a web developer.",
+    "I learned Digital Technology at Politeknik Ungku Omar, then went on to a Bachelor of Computer Science (Software Development) at UTeM. Along the way I interned twice at YTY Group, first in IT support and later as a web developer.",
     "I enjoy building complete products, from the database to the screen, and testing them until they work well. I'm also leading and organising tech communities, and I'm keen to keep learning new technologies, including artificial intelligence.",
   ],
   skills: [

@@ -29,7 +29,7 @@ export default function About() {
         {/* text + note */}
         <div>
           <h2 className="text-4xl font-light tracking-tight sm:text-5xl">
-            meet the <Hl>developer</Hl>
+            meet the <Hl>deve</Hl>
           </h2>
           <div className="mt-6 max-w-md space-y-4 leading-relaxed">
             {about.paragraphs.map((p, i) => (
